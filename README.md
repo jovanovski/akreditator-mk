@@ -7,6 +7,10 @@
 
 Акредитатор не ги следи вашите интернет пребарувања и прелистувања, а отворениот код може да се прегледа тука. Овој проект е поддржан од Фондот за Иновации и Технолошлки Развор.
 
+Преземи го Акредитатор за:
+- [Google Chrome](https://chrome.google.com/webstore/detail/%D0%B0%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0%D1%82%D0%BE%D1%80/ejfikolmiijbpgchlhlickmgoogmhfbo)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/akreditator/)
+
 Во овој момент, Акредитатор презема листа на етички медиуми од 2 регистри:
-1) [Промедиа (ЗНМ/ССНМ)](https://promedia.mk/main)
-2) [ИАБ Македонија](https://www.iab.mk/etichki-kodeks/)
+- [Промедиа (ЗНМ/ССНМ)](https://promedia.mk/main)
+- [ИАБ Македонија](https://www.iab.mk/etichki-kodeks/)
