@@ -1,0 +1,20 @@
+{
+  "name": "Акредитатор",
+  "version": "1.0",
+  "description": "Провери дали медиумот што го читаш се придржува до етички кодекс",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "images/unknown.png"
+    }
+  },
+  "icons": {
+    "128": "images/allOK.png"
+  },
+  "manifest_version": 2
+}

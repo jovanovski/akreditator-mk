@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      color: white;
+      text-align: center;
+      padding: 12px 15px 10px 15px;
+      margin: 0;
+    }
+
+    #siteName {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 200;
+    }
+
+    #logo {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ffffff45;
+      padding-bottom: 10px;
+    }
+
+    .goodBg {
+      background: rgb(7, 173, 41);
+      background: linear-gradient(180deg, rgb(7, 173, 41) 0%, rgb(9, 142, 0) 100%);
+    }
+
+    .unknownBg {
+      background: rgb(140, 140, 140);
+      background: linear-gradient(180deg, rgba(140, 140, 140, 1) 0%, rgba(116, 116, 116, 1) 100%);
+    }
+
+    .description {
+      display: none;
+      font-size: 13px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .register {
+      text-align: left;
+      margin: 13px 0;
+      padding: 10px;
+      border: 1px solid #ffffff8a;
+      border-radius: 3px;
+      background-color: #ffffff26;
+    }
+
+    .registerTitle {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .registerTitle a {
+      text-decoration: none;
+      color: white;
+
+    }
+
+    .registerDescription {
+      font-size: 12px;
+      line-height: 13px;
+      margin-top: 7px;
+    }
+
+    #registerList {
+      margin-top: 20px
+    }
+
+    #registerList .links ul,
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 5px 0;
+    }
+
+    #registerList .links li,
+    .contact ul li {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 13px;
+    }
+
+    #registerList .links li a,
+    .contact ul li a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .contact {
+      border: 1px solid #ffffff6b;
+      border-width: 1px 0 0 0;
+      padding: 0;
+    }
+
+    .contact ul {
+      margin-top: 10px;
+    }
+
+    .contact ul li a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="logo"></div>
+  <div id="siteName"></div>
+  <div id="descriptionGood" class="description">
+    е дел од следните регистри на медиуми со прифатен етички кодекс:
+    <div id="registerList">
+    </div>
+  </div>
+  <div id="descriptionUnknown" class="description">
+    не е во регистрите на медиуми со прифатен етички кодекс на известување
+  </div>
+  <div class="contact">
+    <ul>
+      <li><a id="contactLink" target="_blank" href="">За проектот</a></li>
+    </ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
