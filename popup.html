@@ -4,12 +4,69 @@
 <head>
   <meta charset="utf-8">
   <style>
+    /* Latin */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/Roboto-Regular.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('fonts/Roboto-Light.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* Cyrillic */
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/Roboto-Regular-Cyrillic.woff2') format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url('fonts/Roboto-Light-Cyrillic.woff2') format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
     body {
-      width: 300px;
+      width: 310px;
       color: white;
       text-align: center;
       padding: 12px 15px 10px 15px;
       margin: 0;
+      font-family: "Roboto";
+    }
+
+    #logo {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 35px;
+      border-bottom: 1px solid #ffffff45;
+      padding-bottom: 10px;
+    }
+
+    .goodBg {
+      background: rgb(0, 150, 31);
+      background: linear-gradient(180deg, rgb(0, 150, 31) 0%, rgb(7, 111, 0) 100%);
+    }
+
+    .unknownBg {
+      background: rgb(140, 140, 140);
+      background: linear-gradient(180deg, rgba(140, 140, 140, 1) 0%, rgba(116, 116, 116, 1) 100%);
     }
 
     #siteName {
@@ -18,29 +75,15 @@
       font-weight: 200;
     }
 
-    #logo {
-      font-size: 17px;
-      font-weight: 500;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #ffffff45;
-      padding-bottom: 10px;
-    }
-
-    .goodBg {
-      background: rgb(7, 173, 41);
-      background: linear-gradient(180deg, rgb(7, 173, 41) 0%, rgb(9, 142, 0) 100%);
-    }
-
-    .unknownBg {
-      background: rgb(140, 140, 140);
-      background: linear-gradient(180deg, rgba(140, 140, 140, 1) 0%, rgba(116, 116, 116, 1) 100%);
-    }
-
     .description {
       display: none;
-      font-size: 13px;
-      margin-bottom: 20px;
+      font-size: 14px;
+      margin-bottom: 40px;
       font-weight: 300;
+    }
+
+    #registerList {
+      margin-top: 40px
     }
 
     .register {
@@ -48,7 +91,7 @@
       margin: 13px 0;
       padding: 10px;
       border: 1px solid #ffffff8a;
-      border-radius: 3px;
+      border-radius: 5px;
       background-color: #ffffff26;
     }
 
@@ -64,37 +107,51 @@
     }
 
     .registerDescription {
-      font-size: 12px;
-      line-height: 13px;
+      font-size: 13px;
+      line-height: 15px;
       margin-top: 7px;
     }
 
-    #registerList {
-      margin-top: 20px
+    .register .links {
+      margin-top: 20px;
     }
 
-    #registerList .links ul,
+    .register .links ul,
     .contact ul {
       list-style: none;
       padding: 0;
       margin: 15px 0 5px 0;
     }
 
-    #registerList .links li,
-    .contact ul li {
+    .register .links li {
       display: inline-block;
-      margin-right: 10px;
-      font-size: 13px;
+      margin-right: 15px;
+      font-size: 14px;
+      border: 1px solid #ffffff94;
+      border-radius: 10px;
+      padding: 4px 11px;
     }
 
-    #registerList .links li a,
-    .contact ul li a {
+    .register .links li:hover {
+      background-color: #ffffffe0;
+      cursor: pointer;
+    }
+
+    .register .links li:hover a {
+      color: black;
+    }
+
+    .register .links li:last-child {
+      margin-right: 0;
+    }
+
+    .register .links li a {
       color: white;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .contact {
-      border: 1px solid #ffffff6b;
+      border: 1px solid #ffffff45;
       border-width: 1px 0 0 0;
       padding: 0;
     }
@@ -104,6 +161,8 @@
     }
 
     .contact ul li a {
+      color: white;
+      font-size: 14px;
       text-decoration: none;
     }
   </style>
@@ -118,7 +177,7 @@
     </div>
   </div>
   <div id="descriptionUnknown" class="description">
-    не е во регистрите на медиуми со прифатен етички кодекс на известување
+    не е пронајден во регистрите на медиуми со прифатен етички кодекс
   </div>
   <div class="contact">
     <ul>

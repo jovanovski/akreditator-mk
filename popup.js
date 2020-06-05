@@ -32,5 +32,7 @@ function renderPopup(registerInformation){
 
 //Request register information from background.js that has already downloaded it during startip
 chrome.runtime.sendMessage({message: "getRegisterInformation"}, function(response) {
+  console.log("EVE");
+  console.log(response.registerInformation);
   renderPopup(response.registerInformation);
 });
