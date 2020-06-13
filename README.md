@@ -12,8 +12,10 @@
 
 ## Преземи
 Преземи го Акредитатор за:
-- [Google Chrome](https://chrome.google.com/webstore/detail/%D0%B0%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0%D1%82%D0%BE%D1%80/ejfikolmiijbpgchlhlickmgoogmhfbo)
-- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/akreditator/)
+
+[<img src="https://i.imgur.com/I0gyNrl.png" width="30"/>  Google Chrome](https://chrome.google.com/webstore/detail/%D0%B0%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0%D1%82%D0%BE%D1%80/ejfikolmiijbpgchlhlickmgoogmhfbo)
+
+[<img src="https://i.imgur.com/uyKMnD1.png" width="30"/>  Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/akreditator/)
 
 ## Извори
 Во овој момент, Акредитатор презема листа на етички медиуми од 2 регистри:
