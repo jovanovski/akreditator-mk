@@ -26,6 +26,9 @@
 
 [<img src="https://i.imgur.com/uyKMnD1.png" width="30"/>  Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/akreditator/)
 
+
+[<img src="https://i.imgur.com/3tnvAcs.png" width="30"/>  Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/%D0%B0%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D0%B0%D1%82%D0%BE%D1%80/obabnpcfnogaekfjcggmdogbmpijlpge)
+
 ## Извори
 Во овој момент, Акредитатор презема листа на етички медиуми од 2 регистри:
 - [Промедиа (ЗНМ/ССНМ)](https://promedia.mk/main)
